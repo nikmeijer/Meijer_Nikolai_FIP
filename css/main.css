@@ -1,0 +1,85 @@
+/* 
+    CSS Guide 
+
+    1.  General Styles (Normalize)
+    2.  Hero Image
+    3.  Flexbox Items
+*/
+
+
+/* 1. ---General Styles--- */
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    img, embed, object, video, picture {
+        max-width: 100%;
+    }
+
+    p, h1, h2, h3, h4, h5 {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a {
+        text-decoration: none;
+        transition: all .5s ease-in-out;
+    }
+
+    input, textarea {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    section h2, section h3, section p {
+        padding-left: 15px;
+    }
+
+    .spacer {
+        margin-top: 60px;
+    }
+
+    .txt-spacer {
+        margin-top: 30px;
+    }
+
+/* ---End of General Styles--- */
+
+/* 2. ---Hero Image--- */
+
+    .hero {
+        margin: 0 0;
+    }
+
+    .hero-img img {
+        width: 100%;
+    }
+
+    .hero-img {
+        display: grid;
+        grid-column: span 2;
+        margin-bottom: 1em;
+    }
+
+    .hero-img > * {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .hero-img h2 {
+        background: #fff;
+        padding: 1em 1.75em;
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .hero-img h2.left {
+        align-self: flex-end;
+        justify-self: start;
+        margin-left: 1em;
+    }
+
+/* ---End of Hero Image--- */
