@@ -346,7 +346,7 @@ html {
   }
   
   .desktop {
-    display: none;
+    display: block;
   }
 
 }
