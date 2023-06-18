@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <title>Quatro - Home</title>
@@ -10,40 +13,150 @@
     <body>
         <h1 class="hidden">Quatro Homepage Content</h1>
             <header class="grid-con">
-                <div class="col-span-1 m-col-span-3 l-col-span-3 xl-col-span-3 box">Logo</div>
-                <nav class="col-start-4 col-end-5 m-col-span-9 l-col-span-9 xl-col-span-9 box">
-                    <h2 class="hidden">Main Mobile Nav</h2>
-                    <p>Nav</p>
-                </nav>
-            </header>
-            <section class="hero">
-                <div class="hero-img">
-                    <picture>
-                        <source media="(min-width:1200px)" srcset="https://placehold.co/2200x840">
-                        <source media="(min-width:768px)" srcset="https://placehold.co/1024x600">
-                        <source media="(min-width:510px)" srcset="https://placehold.co/510x480">
-                        <img src="https://placehold.co/510x480" alt="Placeholder Image">
-                    </picture>
-                    <h2 class="left">Title that goes with my Image</h2>
+                <h2 class="hidden">Header</h2>
+                <div id="header-logo" class="col-span-1 m-col-span-3 l-col-span-3 xl-col-span-3 ">
+                    <img src="images/quatro-logo-main.svg" alt="quatro logo">
                 </div>
-            </section>
-            <section class="grid-con">
-                <h2 class="hidden">Product Section</h2>
-                <div class="col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 box"><p>Product 1</p></div>
-                <div class="col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 box"><p>Product 2</p></div>
-                <div class="col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 box"><p>Product 3</p></div>
-                <div class="col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 box"><p>Product 4</p></div>
-            </section>
-            <section class="grid-con">
-                <h2 class="hidden">Service Desc</h2>
-                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box">Copy 1</div>
-                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box">Copy 2</div>
-            </section>
+                <nav class="desktop m-col-span-9 l-col-span-9 xl-col-span-9 ">
+                    <h2 class="hidden">Nav</h2>
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Menu -->
+                <div id="mobile-nav" class="mobile col-span-1">
+                    <input type="check" id="overlay-input"/>
+                    <label for="overlay-input" id="overlay-button"><span></span></label>
+                    <div id="overlay">
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!-- End Mobile Menu -->
+            </header>
+
+            <main>
+                <section id="hero" class="hero">
+                    <h2 class="hidden">Hero Image</h2>
+                    <div class="hero-img">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="https://placehold.co/2200x840">
+                            <source media="(min-width:768px)" srcset="https://placehold.co/1024x600">
+                            <source media="(min-width:510px)" srcset="https://placehold.co/510x480">
+                            <img src="https://placehold.co/510x480" alt="cans of quatro">
+                        </picture>
+                        <h2 class="left">The refreshing taste of Quatro</h2>
+                        <p class="left">Quatro is a line of delicious and refreshing beverages made from the finest natural ingredients. With a variety of flavors to choose from, there's a Quatro for everyone.</p>
+                    </div>
+                </section>
+
+                <section id="products" class="grid-con">
+                    <h2 class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">Four Fresh Flavours</h2>
+                    <div id="greentea" class="col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 ">
+                        <img src="images/product-1.jpg" alt="Quatro Product 1">
+                        <h3>Fresh Green Tea</h3>
+                        <p>Relax with this flavour made with authentic, fresh Japanese tea leaves, steeped to perfection.</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div id="orangegf" class="col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 ">
+                        <img src="images/product-2.jpg" alt="Quatro Product 2">
+                        <h3>Bold Orange-Grapefruit</h3>
+                        <p>Bold blend of citrus fruits, sure to leave you alert and ready for anything.</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div id="lychee" class="col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 ">
+                        <img src="images/product-3.jpg" alt="Quatro Product 3">
+                        <h3>Lychee Breeze</h3>
+                        <p>As refreshing as a morning breeze, this lychee flavour is perfectly balanced between sweet and fresh.</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div id="lemonlime" class="col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 ">
+                        <img src="images/product-4.jpg" alt="Quatro Product 4">
+                        <h3>Lemon-Lime Twist</h3>
+                        <p>Based on the classic 4 fruit flavor, with a new, modern, refreshing lemon-lime twist.</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </section>
+
+                <section id="about" class="grid-con">
+                    <h2 class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">All About Quatro</h2>
+                    <div class="right col-span-2 m-col-span-6 l-col-span-6 xl-col-span-6">
+                        <h3>Quatro starts with Quality</h3>
+                        <p>Welcome to Quatro, where quality takes center stage in every sip. As a leading drink company, we are dedicated to crafting beverages that exceed expectations and awaken your taste buds. From the finest ingredients sourced from around the globe to our meticulous production process, we ensure that each Quatro drink delivers an unparalleled experience.</p>
+                    </div>
+                    <div class="left col-span-2 m-col-span-6 l-col-span-6 xl-col-span-6">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="https://placehold.co/500x360">
+                            <source media="(min-width:768px)" srcset="https://placehold.co/250x180">
+                            <source media="(min-width:510px)" srcset="https://placehold.co/125x90">
+                            <img src="https://placehold.co/510x480" alt="fruit farm photo">
+                        </picture>
+                    </div>
+                    <div class="right col-span-2 m-col-span-6 l-col-span-6 xl-col-span-6">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="https://placehold.co/500x360">
+                            <source media="(min-width:768px)" srcset="https://placehold.co/250x180">
+                            <source media="(min-width:510px)" srcset="https://placehold.co/125x90">
+                            <img src="https://placehold.co/510x480" alt="fresh fruits photo">
+                        </picture>
+                    </div>
+                    <div class="left col-span-2 m-col-span-6 l-col-span-6 xl-col-span-6">
+                        <h3>Unmatched freshness</h3>
+                        <p>At Quatro, we believe that the key to a truly remarkable drink lies in its pristine and invigorating freshness. We go above and beyond to source the freshest, hand-picked ingredients, carefully selected from sustainable farms and orchards. Our commitment to preserving the natural flavors and nutrients means that with every sip, you can taste the vibrant essence of our beverages. </p>
+                    </div>
+                    <div class="right col-span-2 m-col-span-6 l-col-span-6 xl-col-span-6">
+                        <h3>Same brand, refreshed.</h3>
+                        <p>Same Brand, Refreshed. We're excited to unveil a new chapter in our journey, where we build upon our legacy while embracing innovation and creativity. Quatro has undergone a refreshing transformation, staying true to our core values while reimagining the possibilities of great drinks. With a renewed commitment to quality and taste, we're crafting a range of beverages that captivate your senses and leave you wanting more. </p>
+                    </div>
+                    <div class="left col-span-2 m-col-span-6 l-col-span-6 xl-col-span-6">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="https://placehold.co/500x360">
+                            <source media="(min-width:768px)" srcset="https://placehold.co/250x180">
+                            <source media="(min-width:510px)" srcset="https://placehold.co/125x90">
+                            <img src="https://placehold.co/510x480" alt="old quatro logo or cans">
+                        </picture>
+                    </div>
+                </section>
+
+                <section id="team-build" class="grid-con">
+                    <div class="team-members col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                        <div class="team-member">
+                          <img src="images/quatro-team-logo.jpg" alt="quatro logo" class="team-member-image">
+                          <h2 class="team-member-name">Quatro</h2>
+                          <p class="team-member-bio">Hi, We are Quatro! back from the past, and fresher than ever. Want to learn about our awesome team? Click a button to get started!</p>
+                        </div>
+                      </div>
+                      <div class="team-member-buttons col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                        <button class="team-member-button" data-member="0">Nikolai Meijer</button>
+                        <button class="team-member-button" data-member="1">About Us</button>
+                      </div>
+                </section>
+            </main>
+
             <footer class="grid-con">
-                <h2 class="hidden">You made it to the end</h2>
-                <div class="col-span-2 m-col-span-2 l-col-span-2 xl-col-span-2 box">Logo</div>
-                <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-3 box">Site Map</div>
-                <div class="col-span-4 m-col-span-6 l-col-span-7 xl-col-span-7 box">Form to steal your information</div>
+                <h2 class="hidden">Footer</h2>
+                <div id="footer-logo" class="col-span-1 m-col-span-2 l-col-span-2 xl-col-span-2">
+                    <img src="images/quatro-logo-main.svg" alt="quatro logo">
+                </div>
+                <div id="footer-nav" class="col-span-3 m-col-span-10 l-col-span-10 xl-col-span-10">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="copyright" class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                    <p>&copy; 2023 Quatro Beverage Company. All rights reserved.</p>
+                </div>
             </footer>
         <script src="js/main.js"></script>
     </body>
