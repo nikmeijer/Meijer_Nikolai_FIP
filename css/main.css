@@ -9,6 +9,8 @@
     6.  About
     7.  Team Build
     8.  Footer
+    9.  Contact Page
+    10. Product Page
 
 */
 
@@ -558,10 +560,7 @@ footer {
 
 /* 9. ---Contact Page--- */
 
-/* Contact Page */
-
 #contact {
-  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -569,12 +568,12 @@ footer {
 }
 
 #contact h2 {
-  margin-left: 100px;
+  margin-left: 10em;
 }
 
 #contact label {
   color: #1b1e21;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 #contact form {
@@ -583,19 +582,19 @@ footer {
   gap: 1em;
   background: linear-gradient(to bottom right, #FFAF1E, rgb(255, 187, 221));
   padding: 2em;
-  border-radius: 16px;
-  width: 45em;
+  border-radius: 1em;
+  margin: 2em;
 }
 
 #contact input,
 #contact textarea {
-  width: 100%;
-  padding: 16px;
+  max-width: 30em;
+  padding: 1em;
   font-size: 1em;
   border: none;
-  border-radius: 1em;
+  border-radius: 0.5em;
   background-color: #f2f2f2;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 
 #contact input:focus,
@@ -606,16 +605,16 @@ footer {
 
 #contact button {
   display: block;
-  padding: 16px 32px;
-  font-size: 24px;
+  padding: 1em 2em;
+  font-size: 1em;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   background-color: #1b1e21;
   color: #fff;
   border: none;
-  border-radius: 48px;
+  border-radius: 1em;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -624,3 +623,95 @@ footer {
 }
 
 /* ---End of Contact Page--- */
+
+/* 10. ---Product Page--- */
+
+#product-container {
+  background-color: #1b1e21;
+  color: white;
+}
+
+#product-container h2 {
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  padding: 1em;
+}
+
+#product1 {
+  color: #69D065;
+}
+
+#product1 img {
+  justify-content: left;
+  width: 20%;
+  border: solid white 0.2em;
+  border-radius: 2em;
+}
+
+#prod-desc1 {
+  width: 60%;
+  padding: 1em;
+  border: solid #69D065 0.1em;
+  border-radius: 0.1em;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#product2 {
+  color: #FFAF1E;
+}
+
+#product2 img {
+  justify-content: left;
+  width: 20%;
+  border: solid white 0.2em;
+  border-radius: 2em;
+}
+
+#prod-desc2 {
+  width: 60%;
+  padding: 1em;
+  border: solid #FFAF1E 0.1em;
+  border-radius: 0.1em;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#product3 {
+  color: #FFBBDD;
+}
+
+#product3 img {
+  justify-content: left;
+  width: 20%;
+  border: solid white 0.2em;
+  border-radius: 2em;
+}
+
+#prod-desc3 {
+  width: 60%;
+  padding: 1em;
+  border: solid #FFBBDD 0.1em;
+  border-radius: 0.1em;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#product4 {
+  color: #FFF100;
+}
+
+#product4 img {
+  justify-content: left;
+  width: 20%;
+  border: solid white 0.2em;
+  border-radius: 2em;
+}
+
+#prod-desc4 {
+  width: 60%;
+  padding: 1em;
+  border: solid #FFF100 0.1em;
+  border-radius: 0.1em;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---End of Product Page--- */
