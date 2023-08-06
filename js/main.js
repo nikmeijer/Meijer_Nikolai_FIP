@@ -6,14 +6,14 @@
 // Define an array to hold the bio information for each team member
 const teamMembers = [
     {
-      name: 'Nikolai Meijer',
-      image: 'images/nik.jpg',
-      bio: 'Nik is a designer, artist, car-guy who loves to create things that are visually stunning. One catch though, he is a master procrastinator...',
-    },
-    {
       name: 'Quatro',
       image: 'images/quatro-team-logo.jpg',
       bio: 'Hi, We are Quatro! back from the past, and fresher than ever. Want to learn about our awesome team? Click a button to get started!',
+    },
+    {
+      name: 'Nikolai Meijer',
+      image: 'images/nik.jpg',
+      bio: 'Nik is a designer, artist, car-guy who loves to create things that are visually stunning. One catch though, he is a master procrastinator...',
     }
   ];
   
