@@ -362,7 +362,6 @@ nav li h3:hover {
     color: #fff;
     border-radius: 0.5em;
     transition: background-color 0.2s ease-in-out;
-    justify-content: bottom;
 }
   
 #products button:hover {
@@ -566,7 +565,6 @@ footer {
   font-size: 2em;
   color: #69D065;
   font-weight: bold;
-  align-self: top;
   margin-right: 2em;
   background-color: #fff;
 }
